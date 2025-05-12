@@ -21,7 +21,15 @@
     <main>
         <section>
             <h1>Contact</h1>
-            <p>Email: lucas@example.com</p>
+            <p>Email: <span id="email"></span></p>
+            <script>
+                // JavaScript to dynamically display the email
+                const user = "godoygarraza";
+                const domain = "gmail.com";
+                const email = `${user}@${domain}`;
+                const emailElement = document.getElementById("email");
+                emailElement.innerHTML = `<a href="mailto:${email}">${email}</a>`;
+            </script>
         </section>
     </main>
     <footer>
